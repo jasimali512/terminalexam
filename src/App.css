@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+}
+.ProductCategories {
+  position: relative;
+  width: 400px;
+}
+.ProductCategories__img {
+  display: block;
+  width: 100%;
+}
+
+.ProductCategories__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.ProductCategories__overlay--blur {
+  backdrop-filter: blur(5px);
+}
+
+.ProductCategories__overlay--primary {
+  background: #3967bd;
+}
+
+.ProductCategories__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.ProductCategories__overlay:hover {
+  opacity: 0.7;
+}
+
+.ProductCategories__overlay:hover > * {
+  transform: translateY(0);
+}
+
+.ProductCategories__title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.ProductCategories__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+.tagsblog:hover {
+  color: rgb(82, 148, 223);
+}
+.bloglink {
+  color: rgb(1, 7, 15);
+}
+.bloglink:hover {
+  color: rgb(82, 148, 223);
+}
+.topContainer {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  width: 200px;
+  height: 400px;
+}
+
+#top img {
+  position: relative;
+  z-index: -1;
+  display: block;
+  width: 1340px;
+  height: 700px;
+  margin-left: 2px;
+  padding-left: 4px;
+  padding-bottom: 50px;
+  padding-top: 2px;
+}
+.blogcover img {
+  position: relative;
+  z-index: -1;
+  display: block;
+  width: 1340px;
+  height: auto;
+  margin-left: 2px;
+  padding-left: 4px;
+  padding-bottom: 50px;
+  padding-top: 2px;
+}
+.blogcover h1 {
+  position: absolute;
+  top: 10%;
+  padding-left: 35rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+#aboutcover {
+  display: flex;
+  flex-direction: row;
+}
+#aboutcover img {
+  position: relative;
+  z-index: -1;
+  display: block;
+  width: 1340px;
+  height: auto;
+  margin-left: 2px;
+  padding-left: 4px;
+  padding-bottom: 50px;
+  padding-top: 2px;
+}
+.RightAbout1 {
+  height: 100%;
+
+  display: block;
+  margin-left: 7rem;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  margin-right: 3rem;
+  width: 100%;
+}
+
+.LeftAbout2 {
+  height: 100%;
+
+  display: block;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  margin-right: 5rem;
+  width: 100%;
+}
+.inner {
+  overflow: hidden;
+}
+.inner img {
+  transition: all 1.5s ease;
+}
+.inner:hover img {
+  transform: scale(1.5);
+}
+.RightAbout2 {
+  height: 100%;
+  width: 100%;
+}
+.LeftAbout1 {
+  height: 100%;
+  width: 100%;
+  margin-left: 5rem;
+}
+.blogimg1 img {
+  width: 50rem;
+  height: 30rem;
+}
+#aboutimg1 img {
+  width: 20rem;
+  height: 20rem;
+}
+#aboutimg2 img {
+  width: 20rem;
+  height: 25rem;
+}
+.navbar {
+  background: transparent;
+}
+.navbar.active {
+  background: linear-gradient(90deg, white, white);
+}
+#white {
+  padding-top: 2px;
+  color: rgb(51, 48, 48);
+}
+#white strong {
+  color: rgb(51, 47, 47);
+  font-size: 1.25rem;
+}
+#clr {
+  color: rgb(199, 184, 184);
+}
+#clr:hover {
+  color: rgb(101, 175, 209);
+}
+.text {
+  position: absolute;
+  top: 18%;
+  padding-left: 13px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(160, 28, 28);
+}
+.size {
+  font-size: 1rem;
+  color: rgb(124, 60, 60);
+  top: 30%;
+  padding-left: 15px;
+}
+div h1 {
+  font-weight: bold;
+  color: black;
+  padding-top: 70px;
+}
+#imgsize {
+  height: 400px;
+}
+.ims {
+  width: 360px;
+}
+#btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-bottom: 50px;
+}
+
+#btn:hover {
+  background-color: #f1f1f1;
+}
+.centertext {
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding-top: 3px;
+  background-color: rgb(34, 33, 33);
+  height: auto;
+  color: rgba(255, 255, 255, 0.877);
+}
+.fa {
+  padding: 20px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  color: rgb(194, 186, 186);
+}
+
+/* Twitter */
+.fa-twitter {
+  color: rgb(194, 186, 186);
+}
+.fa-instagram {
+  color: rgb(194, 186, 186);
+}
+
+.text-uppercase {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+#fclr {
+  color: rgb(148, 144, 144);
+  font-size: 15px;
+}
+#tclr {
+  color: rgb(148, 144, 144);
+  font-size: 15px;
+}
+#fclr:hover {
+  color: rgb(221, 217, 217);
+  font-size: 15px;
+}
+
+/* @media screen and (max-width: 500px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  #top img {
+    position: relative;
+    z-index: -1;
+    display: block;
+    width: 1340px;
+    height: 560px;
+    margin-left: 2px;
+    padding-left: 4px;
+    padding-bottom: 50px;
+    padding-top: 2px;
+  }
+  .navbar-default {
+    background: transparent;
+  }
+  #white {
+    color: whitesmoke;
+  }
+  #white strong {
+    color: whitesmoke;
+    font-size: 1.15rem;
+  }
+  #white:hover {
+    color: whitesmoke;
+  }
+  .clr {
+    color: rgb(231, 230, 230);
+  }
+  .clr:hover {
+    color: rgb(101, 175, 209);
+  }
+  .text {
+    position: absolute;
+    top: 18%;
+    padding-left: 13px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(160, 28, 28);
+  }
+  .size {
+    font-size: 1rem;
+    color: rgb(124, 60, 60);
+    top: 30%;
+    padding-left: 15px;
+  }
+  div h1 {
+    font-weight: bold;
+    color: black;
+    padding-top: 70px;
+  }
+  #imgsize {
+    height: 400px;
+  }
+  .ims {
+    width: 360px;
+  }
+  #btn {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-bottom: 50px;
+  }
+
+  #btn:hover {
+    background-color: #f1f1f1;
+  }
+  .centertext {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(34, 33, 33);
+    height: 600px;
+    color: rgba(255, 255, 255, 0.877);
+  }
+  .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  Add a hover effect if you want
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  Set a specific color for each brand 
+
+  Facebook 
+  .fa-facebook {
+    color: rgb(194, 186, 186);
+  }
+
+  Twitter
+  .fa-twitter {
+    color: rgb(194, 186, 186);
+  }
+  .fa-instagram {
+    color: rgb(194, 186, 186);
+  }
+} */
